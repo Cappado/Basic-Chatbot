@@ -1,0 +1,12 @@
+# chatbot.py
+
+def chatbot(input_text):
+    responses = {
+        "hello": "Hi there!",
+        "how are you": "I'm just a bot, but I'm doing great!",
+        "bye": "Goodbye!",
+    }
+    return responses.get(input_text.lower(), "I don't understand that.")
+
+# Sample usage
+print(chatbot("hello"))
